@@ -27,11 +27,14 @@
     "plugin:react/all"
   ],
   "rules": {
-    "sort-imports": ["error", {
-      "ignoreCase": true,
-      "ignoreDeclarationSort": true,
-      "memberSyntaxSortOrder": ["single", "multiple", "all", "none"]
-    }],
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true,
+        "memberSyntaxSortOrder": ["single", "multiple", "all", "none"]
+      }
+    ],
     "import/no-default-export": 2,
     "import/first": 2,
     "import/no-duplicates": 2,
