@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
 import { Header } from './Header';
+import './layout.css';
 
 interface Props {
   children: React.ReactNode;

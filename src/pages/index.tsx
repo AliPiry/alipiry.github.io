@@ -5,7 +5,7 @@ import { Image } from '../components/Image';
 import { Layout } from '../components/Layout';
 import { Seo } from '../components/Seo';
 
-export const IndexPage: React.FC<{}> = () => (
+const IndexPage: React.FC<{}> = () => (
   <Layout>
     <Seo title="Home" />
     <h1>{'Hi people'}</h1>
@@ -17,3 +17,5 @@ export const IndexPage: React.FC<{}> = () => (
     <Link to="/page-2/">{'Go to page 2'}</Link>
   </Layout>
 );
+
+export default IndexPage;
