@@ -1,10 +1,8 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import { graphql, useStaticQuery } from 'gatsby';
 
-interface Props {}
-
-export const Image: React.FC<Props> = () => {
+export const Image: React.FC<{}> = () => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {

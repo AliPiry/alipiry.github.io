@@ -1,8 +1,7 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import { Header } from './Header';
-import './layout.css';
 
 interface Props {
   children: React.ReactNode;
@@ -32,9 +31,7 @@ export const Layout = ({ children }: Props) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          {'©'} {new Date().getFullYear()}
         </footer>
       </div>
     </>

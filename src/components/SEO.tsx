@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 
 type MetaProps = JSX.IntrinsicElements['meta'];
 
@@ -15,7 +15,7 @@ interface Props {
   title: string;
 }
 
-export const SEO: React.FC<Props> = ({
+export const Seo: React.FC<Props> = ({
   description,
   lang,
   meta,
@@ -40,8 +40,6 @@ export const SEO: React.FC<Props> = ({
   return (
     <Helmet
       htmlAttributes={lang}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
@@ -76,12 +74,14 @@ export const SEO: React.FC<Props> = ({
           content: metaDescription,
         },
       ].concat(meta)}
+      title={title}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
     />
   );
 };
 
-SEO.defaultProps = {
+Seo.defaultProps = {
+  description: ``,
   lang: `en`,
   meta: [],
-  description: ``,
 };
