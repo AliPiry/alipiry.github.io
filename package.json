@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "alipiry.github.io",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Ali Piry's personal website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ali Piry <alipiry@icloud.com>",
   "dependencies": {
     "@types/react-helmet": "^5.0.14",
     "gatsby": "^2.17.6",
@@ -50,9 +50,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/alipiry/alipiry.github.io"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/alipiry/alipiry.github.io/issues"
   }
 }
